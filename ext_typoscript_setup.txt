@@ -1,0 +1,18 @@
+module.tx_beuserbatch_tools_beuserbatchbeusercreate {
+  settings {
+    usernamePrefix = scw
+  }
+}
+config.tx_extbase{
+    persistence{
+        classes{
+
+            SCW\Beuserbatch\Domain\Model\Importuser {
+                mapping {
+                    
+                }
+            }
+            
+    	}
+    }
+}

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2016-10-24T13:37:22Z" product-name="beuserbatch">
+		<header/>
+		<body>
+			<trans-unit id="tx_beuserbatch_domain_model_importuser">
+				<source>Importuser</source>
+			</trans-unit>
+			<trans-unit id="tx_beuserbatch_domain_model_importuser.firstname">
+				<source>Firstname</source>
+			</trans-unit>
+			<trans-unit id="tx_beuserbatch_domain_model_importuser.lastname">
+				<source>Lastname</source>
+			</trans-unit>
+			<trans-unit id="tx_beuserbatch_domain_model_importuser.username">
+				<source>Username</source>
+			</trans-unit>
+			<trans-unit id="tx_beuserbatch_domain_model_importuser.begrouip">
+				<source>Begrouip</source>
+			</trans-unit>
+			<trans-unit id="tx_beuserbatch_domain_model_importuser.groupname">
+				<source>Groupname</source>
+			</trans-unit>
+			<trans-unit id="tx_beuserbatch_domain_model_importuser.email">
+				<source>Email</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

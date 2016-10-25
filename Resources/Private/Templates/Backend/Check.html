@@ -1,0 +1,45 @@
+<div xmlns="http://www.w3.org/1999/xhtml" lang="en"
+     xmlns:f="http://xsd.helmut-hummel.de/ns/TYPO3/CMS/Fluid/ViewHelpers">
+    <f:layout name="Backend" />
+    <title>Templates: Check</title>
+
+    <f:section name="main">
+      <f:if condition="{data -> f:count()}">
+        <f:then>
+          <p>
+            Data to import:
+          </p>
+          <table class="table table-striped">
+            <tr>
+              <th>Firstname</th>
+              <th>Lastname</th>
+              <th>E-Mail</th>
+              <th>username (generated)</th>
+              <th>Usergroup</th>
+            </tr>
+            <f:for each="{data}" as="user">
+              <tr>
+                <td>{user.firstname}</td>
+                <td>{user.lastname}</td>
+                <td>{user.email}</td>
+                <td>{user.username}</td>
+                <td>{user.groupname}</td>
+              </tr>
+            </f:for>
+          </table>
+          <p>
+            Is this what you wanted to import?
+          </p>
+
+          <f:link.action action="create" class="btn btn-primary">Create BE Users as shown above</f:link.action>
+        </f:then>
+        <f:else>
+          <p>
+            No data found in file or not file uploaded!
+          </p>
+        </f:else>
+      </f:if>
+
+        <f:link.action action="overview" class="btn btn-warning">Abort</f:link.action>
+    </f:section>
+</div>

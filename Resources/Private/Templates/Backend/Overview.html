@@ -1,0 +1,27 @@
+<div xmlns="http://www.w3.org/1999/xhtml" lang="en"
+     xmlns:f="http://xsd.helmut-hummel.de/ns/TYPO3/CMS/Fluid/ViewHelpers">
+    <f:layout name="Backend" />
+    <title>Templates: Index</title>
+
+    <f:section name="main">
+        
+        <p>
+          Here you can upload your csv files holding users to import.
+        </p>
+        <p>
+          Load Preset-CSV-File here: <a class="text-primary" href="../{f:uri.resource(path: 'Files/import_beuserbatch.csv', absolute: '0')}" target="_blank">import_beuserbatch.csv</a>
+        </p>
+        <div class="row">
+          <div class="col-xs-12 col-sm-6">
+            <f:form action="check" class="" enctype="multipart/form-data">
+              <div class="form-group">
+                <label for="file">File input</label>
+                <f:form.upload name="file" />
+              </div>
+              <f:form.submit class="btn btn-default" name="mySubmit" value="Submit" />
+            </f:form>
+          </div>
+        </div>
+        
+    </f:section>
+</div>
