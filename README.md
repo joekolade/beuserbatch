@@ -1,4 +1,4 @@
-# beuserbatch
+# TYPO3 Extension *beuserbatch*
 
 GitHub Repository for TYPO3 CMS Extension beuserbatch:
 
