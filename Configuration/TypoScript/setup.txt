@@ -7,6 +7,10 @@ module.tx_beuserbatch_tools_beuserbatchbeusercreate {
 	view {
 		templateRootPaths.0 = {$module.tx_beuserbatch_beusercreate.view.templateRootPath}
 		partialRootPaths.0 = {$module.tx_beuserbatch_beusercreate.view.partialRootPath}
-		layoutRootPaths.0 = {$module.tx_beuserbatch_beusercreate.view.layoutRootPath}
-	}
+    layoutRootPaths.0 = {$module.tx_beuserbatch_beusercreate.view.layoutRootPath}
+  }
+
+  settings {
+		level = {$module.tx_beuserbatch_beusercreate.settings.level}
+  }
 }

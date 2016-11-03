@@ -11,5 +11,8 @@ module.tx_beuserbatch_beusercreate {
 	persistence {
 		# cat=module.tx_beuserbatch_beusercreate//a; type=string; label=Default storage PID
 		storagePid =
+
+		# cat=module.tx_beuserbatch_beusercreate//a; type=string; label=Level of right inheritance from groups
+		level = 3
 	}
 }

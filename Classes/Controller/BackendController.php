@@ -120,20 +120,23 @@ class BackendController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
       else {
         $u->setIsAdministrator(TRUE);
       }
-      $u->setPid(261);
+      
+      // $u->setPid(261);
 
-      \TYPO3\CMS\Extbase\Utility\DebuggerUtility::var_dump($u);
+      // \TYPO3\CMS\Extbase\Utility\DebuggerUtility::var_dump($u);
       // \TYPO3\CMS\Extbase\Utility\DebuggerUtility::var_dump($u->getBackendUser());
+      
       $this->beuserRepository->add($u);
       $persistenceManager->persistAll();
 
-      \TYPO3\CMS\Extbase\Utility\DebuggerUtility::var_dump($u->getUid(), 'UID');
+      // \TYPO3\CMS\Extbase\Utility\DebuggerUtility::var_dump($u->getUid(), 'UID');
       
       // Set pwd
       $into_table  = 'be_users';
       $where_clause= 'uid='.$u->getUid();
       $field_values = array(
         'password' => $value->getUsername().'_pwd_0102'
+        ,'level' => $this->settings['level']
         ,'tstamp' => time()
       );
           
